@@ -6,7 +6,7 @@ span.a {display: inline;}
 span.b {display: block;}
 span.c {display: inline-block;}
 #catspot {position: fixed; bottom: 0; right: 0;}
-#dogsot {position: relative; right: 50px; bottom: 150px;}
+#dogspot {position: relative; right: 50px; bottom: 150px;}
 .notused {background-color: orange;}
 #positionMe {position: relative;}
 #birdspot {position: absolute; top: 50px; left: 250px;}
