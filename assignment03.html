@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 03</title>
+  </head>
+  <body>
+    <style>
+      body {
+        touch-action: manipulation;
+      }
+      a {
+        text-align: center;
+        font-size: 4rem;
+        text-decoration: none;
+        display: block;
+        position: relative;
+      }
+      a.def:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0008;
+      }
+      img {
+        width: 750px;
+        max-width: 100%;
+        border-radius: 50px;
+        margin: auto;
+        display: block;
+      }
+    </style>
+    <a class="abc" href="golfScorecard.html">Golf Score Card</a>
+
+    <a class="def" href="golfScorecard.html">
+      <img src="images/assignment03.png" alt="Image of a Golf Score Board"
+    /></a>
+  </body>
+</html>
