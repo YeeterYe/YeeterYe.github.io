@@ -1,25 +1,4 @@
-/* -------------------------------
-Functions in this app:
 
-clubDistanceList.html
-
- loadClubDistances()
- appendTableRows()
- displayClubEntry()
- displayClubDistanceEntryForm(c)
- undoLastShot()
- resetAllClubDistances()
- displayAbout()
- clubEntry.html
- addClub()
- cancelClub()
- clubDistanceEntry.html
-
- populateStatsTable()
- appendTapEntryButtons()
-   updateStats()
-
---------------------------------- */
 
 
 // ----- Functions (clubDistanceList.html) -----
@@ -176,7 +155,7 @@ function loadClubDistances() {
         avgDistPlusSome = 320;
         avgDistMinusSome = 0;
     }
-    // append buttons to div in decrements of 5 yards
+    
     for (let i = avgDistPlusSome; i > avgDistMinusSome; i -= 5) {
         let btn = document.createElement("span");
         btn.innerHTML = "<button class='cmn_noPadding cmn_fullHeight cmn_tapEntry' onclick='updateStats(" + i + ");'>" + i + "</button> ";
@@ -188,10 +167,9 @@ function loadClubDistances() {
     }
  }
  
- // update distances based on user-entered value, "shotDistance"
+ 
  function updateStats(shotDistance=0) {
-    // shotDistance can be user-entered by fast-entry button or by typed input
-    // if shotDistance==0 then shotDistance was entered by typed input,
+   
     // so must pull shotValue from getElementById('clubVal')
     if(shotDistance==0)
         shotDistance = parseInt(document.getElementById('clubVal').value);
